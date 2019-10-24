@@ -4,13 +4,15 @@ node{
 
         stage ("init"){
             echo "${ENV_CLIENTID}"
-
+sh 'printenv'
         }
-
+  
     }
 
     stage("checkout"){
-        println 'TODO'
+        println '====TODO===='
+
+        sh 'printenv'
     }
    
 }
