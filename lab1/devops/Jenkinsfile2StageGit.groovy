@@ -3,7 +3,7 @@ node{
     withEnv(["ENV_CLIENTID=1234-123"]){
 
         stage ("init"){
-            echo "${ENV_CLIENT}"
+            echo "${ENV_CLIENTID}"
 
         }
 
