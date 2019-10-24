@@ -12,7 +12,14 @@ sh 'printenv'
     stage("checkout"){
         println '====TODO===='
 
-        sh 'printenv'
+        git(
+            branch : master,
+            credentialsId: "ftito-github",
+            url: "https://github.com/fabiotito/aks-rbac-example1.git"
+        )
+
+        sh "ls -lta"
+        
     }
    
 }
